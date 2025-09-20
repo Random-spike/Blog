@@ -1,0 +1,6 @@
+title: "我的博客"
+baseurl: "" # 如果仓库是 random-spike.github.io 就留空
+url: "https://random-spike.github.io"
+
+# 改文章链接格式：只用标题，不要日期
+permalink: /:title/
