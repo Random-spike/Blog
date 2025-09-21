@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://random-spike.github.io/Blog/archives/"/>
+    <link rel="canonical" href="https://random-spike.github.io/Blog/page/2/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -134,7 +134,7 @@
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
-<meta property="og:url" content="https://random-spike.github.io/Blog/archives/index.html">
+<meta property="og:url" content="https://random-spike.github.io/Blog/page/2/index.html">
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
@@ -163,7 +163,7 @@
     
     <title>
         
-            归档 | SMY&#39;s blog
+            SMY&#39;s blog - Come to find the answer.
         
     </title>
 
@@ -265,6 +265,41 @@
 <main class="page-container" id="swup">
 
 	
+	<style>
+    .home-article-item,
+    .sidebar-links,
+    .sidebar-content,
+    a.page-number,
+    a.extend,
+    .sidebar-links .links:hover,
+    .right-bottom-tools,
+    footer.footer {
+        background-color: var(--background-color-transparent-80) !important;
+    }
+    .right-bottom-tools:hover,
+    a.page-number:hover,
+    a.extend:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .site-info,
+    .home-article-sticky-label {
+        background-color: var(--background-color-transparent-15) !important;
+    }
+    .home-article-sticky-label {
+        backdrop-filter: none !important;
+    }
+    .home-banner-background {
+        filter: blur(15px);
+    }
+</style>
+
+<div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
+    <img src="/Blog/images/wallhaven-wqery6-light.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
+    <img src="/Blog/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
+</div>
+
+
+	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
@@ -277,9 +312,9 @@
                 </a>
             
             <a class="logo-title" href="/Blog/">
-                
+                <h1>
                 SMY&#39;s blog
-                
+                </h1>
             </a>
         </div>
 
@@ -394,7 +429,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/Blog/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -542,7 +577,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/Blog/"
                         >
                             <span>
@@ -619,292 +654,880 @@
 
 		<div class="main-content-body transition-fade-up">
 			
+			<div class="home-sidebar-container">
+    <div class="sticky-container sticky">
+        
+        
+            
+                <div class="sidebar-links">
+                    <div class="site-info">
+                        <div class="site-name">SMY&#39;s blog</div>
+                        
+                            <div class="announcement">
+                                Reality.
+                            </div>
+                        
+                    </div>
+                    
+                        
+                            
+                                <a class="links" href="/Blog/archives">
+                                    
+                                        <i class="fa-regular fa-archive icon-space"></i>
+                                    
+                                    <span class="link-name">Archives</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/Blog/tags">
+                                    
+                                        <i class="fa-regular fa-tags icon-space"></i>
+                                    
+                                    <span class="link-name">Tags</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/Blog/categories">
+                                    
+                                        <i class="fa-regular fa-folder icon-space"></i>
+                                    
+                                    <span class="link-name">Categories</span>
+                                </a>
+                            
+                        
+                    
+                </div>
+            
+            <div class="sidebar-content"  marginTop >
+                <div class="avatar flex justify-center">
+    <img src="/Blog/images/avatar.jpg">
+</div>
+                <div class="author flex flex-col justify-center my-2.5 mx-0">
+    <div class="name">Random spike</div>
+    
+        <div class="label">vOwOv</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">24</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+            </div>
+        
+
+    </div>
+</div>
+
+			
 
 			<div class="main-content">
-				<div class="archive-container shadow-none hover:shadow-none sm:shadow-redefine sm:hover:shadow-redefine-hover">
-	
-<div class="archive-list-container">
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2025</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">5</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+				<div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='09-21'>
-                    
-                    <a href="/Blog/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%9C%E6%96%87%E6%8B%BF%E5%88%B05%E5%88%86/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">如何在作文拿到5分</span>
-                    </a>
-                    
+
                 
-                    
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B0_2024922/">
+                            文化课日记 2024922
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            因为最近比较忙，以后会更忙，所以我来随便写一点。
+浅浅的评价一下一些科目和老师，因为文章是公开的，所以评价的方式会更加让大众接受。
+课堂
+数学：
+上课重复循环输出好吧诶。
+根据可靠的统计，他一节课说“好吧诶”该串的数量高达200+。
+我们数过几次，分布在220~270不等。
+后面我们就不数了。
+
+英语：
+英语老师是我们的班主任，和初中一样，所以我们上课比较本分。
+尽管如此，仍然会出现几个突变...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Sep 22 2024 16:23:02 GMT+0800">
+                
+                    2024-09-22
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
                     
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='03-25'>
+                        <li>
+                            <a href="/Blog/categories/%E5%AD%A6%E4%B9%A0-%E6%96%87%E5%8C%96%E8%AF%BE/">学习&amp;文化课</a>&nbsp;
+                        </li>
                     
-                    <a href="/Blog/%E5%AE%8C%E5%BD%A2%E5%A1%AB%E7%A9%BA%E4%B9%8B%E5%88%AB%E6%A0%B7%E7%9A%84%E7%A2%B0%E7%A2%B0%E8%BD%A6%E5%A4%A7%E6%88%98/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">完形填空之别样的碰碰车大战</span>
-                    </a>
                     
                 
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='02-14'>
-                    
-                    <a href="/Blog/IMMC%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">IMMC游记</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/IMMC%E5%86%AC%E5%AD%A3%E8%B5%9B%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">IMMC冬季赛游记</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/HiMCM%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">HiMCM游记</span>
-                    </a>
-                    
-                
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">19</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E9%97%B2%E8%AF%9D/">闲话</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B0_2024922/">阅读全文<span class="seo-reader-text">文化课日记 2024922</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='12-20'>
-                    
-                    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B020241220/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">文化课日记20241220</span>
-                    </a>
-                    
+
                 
-                    
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E5%86%9B%E8%AE%AD%E6%B8%B8%E8%AE%B0/">
+                            军训游记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            引言：
+它叫东方绿舟而不是东方绿洲。
+
+8.25 day:-1稍微了解了一下东方绿舟军训相关内容，但一不小心看到了：
+荷兰公寓闹鬼
+美国公寓死人
+srds，玩florr的去过多少次地狱了&#x2F;cf
+不过这种话题虽然没人信，但总是不错的聊天话题。
+8.26 day:0早上出发去东方绿舟，路上wyh在做题，感觉很卷。
+到了后，发了迷彩服，分寝室。
+5,6班在瑞士公寓。1~4班在荷兰公寓。因...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Aug 30 2024 21:57:00 GMT+0800">
+                
+                    2024-08-30
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
                     
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='11-14'>
+                        <li>
+                            <a href="/Blog/categories/%E7%94%9F%E6%B4%BB%C2%B7%E6%B8%B8%E8%AE%B0/">生活·游记</a>&nbsp;
+                        </li>
                     
-                    <a href="/Blog/%E4%B8%80%E5%88%86%E9%92%9F%E7%9B%AE%E7%9D%B9%E8%80%83%E5%9C%BA%E4%B9%8B%E6%80%AA%E7%8E%B0%E7%8A%B6/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">一分钟目睹考场之怪现状</span>
-                    </a>
                     
                 
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-26'>
-                    
-                    <a href="/Blog/2024_CSPS/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">2024 CSPS</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-18'>
-                    
-                    <a href="/Blog/%E4%BD%9C%E6%96%87%E8%B5%8F%E6%9E%90_%E5%88%AB%E6%A0%B7%E7%9A%84%E7%A2%B0%E7%A2%B0%E8%BD%A6%E5%A4%A7%E6%88%98/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">作文赏析——别样的碰碰车大战</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-13'>
-                    
-                    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B0_20241013/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">文化课日记 20241013</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='09-22'>
-                    
-                    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B0_2024922/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">文化课日记 2024922</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-30'>
-                    
-                    <a href="/Blog/%E5%86%9B%E8%AE%AD%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">军训游记</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-24'>
-                    
-                    <a href="/Blog/%E4%BB%96_%E4%B8%80%E5%90%8D%E5%A4%96%E6%98%9F%E4%BA%BA/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">他，一名外星人</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-22'>
-                    
-                    <a href="/Blog/%E5%B0%8F%E5%BF%83_%E4%BD%A0%E8%BA%AB%E8%BE%B9%E5%8F%AF%E8%83%BD%E6%9C%89%E5%A4%96%E6%98%9F%E4%BA%BA_/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">小心 你身边可能有外星人</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-19'>
-                    
-                    <a href="/Blog/SES_%E6%9F%90%E8%8B%B1%E8%AF%AD%E8%80%81%E5%B8%88%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">SES 某英语老师规则类怪谈</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">儒林外史</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-18'>
-                    
-                    <a href="/Blog/%E5%94%90%E9%9B%8E%E4%B8%8D%E8%BE%B1%E4%BD%BF%E5%91%BD%E7%A2%8E%E7%89%87%E5%8C%96%E7%BF%BB%E8%AF%91/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">唐雎不辱使命碎片化翻译</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">毕业典礼</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E5%AF%B9%E8%AF%9D/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">对话</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-16'>
-                    
-                    <a href="/Blog/%E5%A4%A9%E7%9A%87%E5%A4%96%E4%BC%A0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">天皇外传</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='07-23'>
-                    
-                    <a href="/Blog/%E4%BD%A0%E4%BB%AC%E7%9A%84%E5%88%9B%E6%96%B0%E7%82%B9%E5%9C%A8%E5%93%AA%E9%87%8C_/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">你们的创新点在哪里？</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='07-15'>
-                    
-                    <a href="/Blog/%E4%BB%8Elxl%E5%BC%80%E5%A7%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">从lxl开始的数据结构</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%BE%E8%AE%BA/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">从0开始的图论</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='07-11'>
-                    
-                    <a href="/Blog/%E4%B8%BA%E4%BB%80%E4%B9%88nitianyi%E7%9A%84%E5%90%8D%E5%AD%97%E8%B5%B7%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">为什么nitianyi的名字起的非常好</span>
-                    </a>
-                    
-                
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
-    
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E6%A0%A1%E5%9B%AD/">校园</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E8%AE%B0%E5%BD%95/">记录</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E5%86%9B%E8%AE%AD%E6%B8%B8%E8%AE%B0/">阅读全文<span class="seo-reader-text">军训游记</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E4%BB%96_%E4%B8%80%E5%90%8D%E5%A4%96%E6%98%9F%E4%BA%BA/">
+                            他，一名外星人
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            本文纯属虚构。
+他，是一名外星人。
+距离地球1.5亿公里。
+来自恒星。
+身份尊贵，地位显赫。仅仅因为它和祖先节点有重边同时也有自环。他的家族是太阳人家族中最庞大的一支，同时连边稠密，是自以为地球上地位最崇高的集体。
+作为一名外星人，他必然是有点超能力的。
+
+把控了世界上 70% 以上的能源资源。
+把控了世界上所航运枢纽。
+把控了世界上50%以上的政权。
+垄断了世界上40%以上的产业。
+拥有世...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Aug 24 2024 20:57:26 GMT+0800">
+                
+                    2024-08-24
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E4%BC%91%E9%97%B2-%E5%A8%B1%E4%B9%90/">休闲&amp;娱乐</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E5%8E%9F%E5%88%9B/">原创</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E5%B0%8F%E8%AF%B4/">小说</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E4%BB%96_%E4%B8%80%E5%90%8D%E5%A4%96%E6%98%9F%E4%BA%BA/">阅读全文<span class="seo-reader-text">他，一名外星人</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E5%B0%8F%E5%BF%83_%E4%BD%A0%E8%BA%AB%E8%BE%B9%E5%8F%AF%E8%83%BD%E6%9C%89%E5%A4%96%E6%98%9F%E4%BA%BA_/">
+                            小心 你身边可能有外星人
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            小心！你身边可能有外星人！众所周知，很多外星人可能披着人类的外衣，让你看不出他是外星人，外星人这么做的动机可能有很多，先说说对我们的的影响。
+首先，如果你是人（自己应该心知肚明）。
+如果你有的时候做题调了很久，到最后发现是一个弱智错误；如果你有的时候本来想打比赛结果忘记了；如果有的时候你打游戏被你的家长发现；如果你打游戏的时候运气很差。那么说明你最近24 hour内接触过外星人。
+如何找出外...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Aug 22 2024 16:23:02 GMT+0800">
+                
+                    2024-08-22
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E5%B0%8F%E8%AF%B4/">小说</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E5%B0%8F%E5%BF%83_%E4%BD%A0%E8%BA%AB%E8%BE%B9%E5%8F%AF%E8%83%BD%E6%9C%89%E5%A4%96%E6%98%9F%E4%BA%BA_/">阅读全文<span class="seo-reader-text">小心 你身边可能有外星人</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/SES_%E6%9F%90%E8%8B%B1%E8%AF%AD%E8%80%81%E5%B8%88%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/">
+                            SES 某英语老师规则类怪谈
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            该老师用X表示。
+课后
+
+当你走在空无一人的2号楼走廊上时，小心！X可能就在你身后！这时候应该快速跑进教室。
+选择作座位时，小心！附近的同学不应该善于答疑解惑！
+当你和同学上完信息课时，小心！不要讨论课上玩的游戏！
+在午休时间，如果你拿出篮球并且打算去篮球场玩，小心！X可能发现了你的动静！
+当你进行完某场考试时（包括但不限于英语考试）小心! X总会在考试结束出现在教室。
+自修课时，在20~3...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Aug 19 2024 22:29:57 GMT+0800">
+                
+                    2024-08-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E5%AD%A6%E4%B9%A0-%E6%96%87%E5%8C%96%E8%AF%BE/">学习&amp;文化课</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E6%A0%A1%E5%9B%AD/">校园</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E9%97%B2%E8%AF%9D/">闲话</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/SES_%E6%9F%90%E8%8B%B1%E8%AF%AD%E8%80%81%E5%B8%88%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/">阅读全文<span class="seo-reader-text">SES 某英语老师规则类怪谈</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2/">
+                            儒林外史
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            ##前情提要
+儒帝在位，罢黜百家，独尊儒术。海内外涌现4大儒者，为wyh，mzj，wyn，hr。
+wyh，乃千年难有之儒才，为举国第一儒士，多与儒帝交流儒法，钻研经书。
+mzj，为一海外儒者，尝有弟子数万之众。
+wyn，为当今世上第一善用儒学之人，曾用儒术造大样例轻松hack掉世界第一黑客t神和江莉。
+hr，了解儒学各个方面，为一儒学的百儒全书。
+##第一回
+wyh小时，曾与尚为太子的儒帝交...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Aug 19 2024 02:12:25 GMT+0800">
+                
+                    2024-08-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E4%BC%91%E9%97%B2-%E5%A8%B1%E4%B9%90/">休闲&amp;娱乐</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E5%8E%9F%E5%88%9B/">原创</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E5%B0%8F%E8%AF%B4/">小说</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2/">阅读全文<span class="seo-reader-text">儒林外史</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E5%94%90%E9%9B%8E%E4%B8%8D%E8%BE%B1%E4%BD%BF%E5%91%BD%E7%A2%8E%E7%89%87%E5%8C%96%E7%BF%BB%E8%AF%91/">
+                            唐雎不辱使命碎片化翻译
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            1本文搬运自洛谷专栏。
+
+唐雎不辱使命
+秦王使人谓安陵君曰：「寡人欲以五百里之地易安陵，安陵君其许寡人！」
+
+秦王使用一个人对一名叫安陵的君子说：「孤寡的人想要用一个叫五百里的人替换你，你一定要许诺我这个孤家寡人啊。」
+
+安陵君曰：「大王加惠，以大易小，甚善；虽然，受地于先王，愿终守之，弗敢易！」
+
+安陵说：“大王施加优惠，用肥大的人便宜瘦小的人，太善良了。虽然但是，先前从大王那里接受土地，...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Aug 18 2024 19:14:21 GMT+0800">
+                
+                    2024-08-18
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E5%AD%A6%E4%B9%A0-%E6%96%87%E5%8C%96%E8%AF%BE/">学习&amp;文化课</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E5%8E%9F%E5%88%9B/">原创</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E5%94%90%E9%9B%8E%E4%B8%8D%E8%BE%B1%E4%BD%BF%E5%91%BD%E7%A2%8E%E7%89%87%E5%8C%96%E7%BF%BB%E8%AF%91/">阅读全文<span class="seo-reader-text">唐雎不辱使命碎片化翻译</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/">
+                            毕业典礼
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            前言毕业典礼事实上是 2024&#x2F;6&#x2F;24 的，但是昨天我用 5h 的时间调 P1763 的 Hack 数据到凌晨，因此昨天没写，拖到 2024&#x2F;6&#x2F;26。
+6&#x2F;17这是第一次排练，似乎没什么意思。
+中午一到学校就更新了FC，然而安装包有点大，下载了30min。秉持着哪里有网络我就去哪里的原则，摸到了音乐教室。（手机连的是校园网，校园网在教学楼...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Aug 18 2024 19:11:02 GMT+0800">
+                
+                    2024-08-18
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E7%94%9F%E6%B4%BB-%E6%B8%B8%E8%AE%B0/">生活&amp;游记</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E6%A0%A1%E5%9B%AD/">校园</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E8%AE%B0%E5%BD%95/">记录</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/">阅读全文<span class="seo-reader-text">毕业典礼</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E5%AF%B9%E8%AF%9D/">
+                            对话
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            1本文基本是Chat-GPT创作
+
+本文同步到个人博客。
+Chat-GPT创作。
+参考内容：唐雎不辱使命碎片化翻译，邹忌讽齐王纳谏（本土碎片化翻译），短歌行（本土碎片化翻译），出师表（本土碎片化翻译）。
+前情提要
+命令初生一样下达，各位臣子邀请国王，朝廷的门成了若智市场；
+
+正文天皇刘泽圻：尔等费雾，岂敢与吾争锋？吾掌天命，后宫八千人，皆为天下之基石。今之天下如翻越1100个耳朵，尔等安能知...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Aug 18 2024 19:06:48 GMT+0800">
+                
+                    2024-08-18
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E5%AD%A6%E4%B9%A0-%E6%96%87%E5%8C%96%E8%AF%BE/">学习&amp;文化课</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E5%8E%9F%E5%88%9B/">原创</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E5%AF%B9%E8%AF%9D/">阅读全文<span class="seo-reader-text">对话</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E5%A4%A9%E7%9A%87%E5%A4%96%E4%BC%A0/">
+                            天皇外传
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            1本文封面和内容均由AI创作。
+
+第一章：大化改新的风云变幻东京，古老与现代交织的城市，此时正经历着大化改新的历史转折。这是一个充满变革与挑战的时代，权力的争夺无处不在。天皇刘泽圻，一位充满传奇色彩的统治者，手握“日本之力”，能够召唤日本军队，为大和民族带来无尽的荣耀与恐怖。天皇刘泽圻年少时便展现出过人的智慧与勇气，他通过一系列巧妙的策略和无情的手段巩固了自己的地位。
+然而，尽管天皇的权力看...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Aug 16 2024 20:49:08 GMT+0800">
+                
+                    2024-08-16
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E4%BC%91%E9%97%B2-%E5%A8%B1%E4%B9%90/">休闲&amp;娱乐</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E5%B0%8F%E8%AF%B4/">小说</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E5%A4%A9%E7%9A%87%E5%A4%96%E4%BC%A0/">阅读全文<span class="seo-reader-text">天皇外传</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator px-7 py-5">
+        <div class="paginator">
+	<a class="extend prev" rel="prev" href="/Blog/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/Blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/Blog/page/3/">3</a><a class="extend next" rel="next" href="/Blog/page/3/"><i class="fa-regular fa-angle-right"></i></a>
+</div>
+  
+    </div>
+</div>
+
 			</div>
 
 			
@@ -1070,6 +1693,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 

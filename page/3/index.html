@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://random-spike.github.io/Blog/archives/"/>
+    <link rel="canonical" href="https://random-spike.github.io/Blog/page/3/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -134,7 +134,7 @@
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
-<meta property="og:url" content="https://random-spike.github.io/Blog/archives/index.html">
+<meta property="og:url" content="https://random-spike.github.io/Blog/page/3/index.html">
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
@@ -163,7 +163,7 @@
     
     <title>
         
-            归档 | SMY&#39;s blog
+            SMY&#39;s blog - Come to find the answer.
         
     </title>
 
@@ -265,6 +265,41 @@
 <main class="page-container" id="swup">
 
 	
+	<style>
+    .home-article-item,
+    .sidebar-links,
+    .sidebar-content,
+    a.page-number,
+    a.extend,
+    .sidebar-links .links:hover,
+    .right-bottom-tools,
+    footer.footer {
+        background-color: var(--background-color-transparent-80) !important;
+    }
+    .right-bottom-tools:hover,
+    a.page-number:hover,
+    a.extend:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .site-info,
+    .home-article-sticky-label {
+        background-color: var(--background-color-transparent-15) !important;
+    }
+    .home-article-sticky-label {
+        backdrop-filter: none !important;
+    }
+    .home-banner-background {
+        filter: blur(15px);
+    }
+</style>
+
+<div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
+    <img src="/Blog/images/wallhaven-wqery6-light.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
+    <img src="/Blog/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
+</div>
+
+
+	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
@@ -277,9 +312,9 @@
                 </a>
             
             <a class="logo-title" href="/Blog/">
-                
+                <h1>
                 SMY&#39;s blog
-                
+                </h1>
             </a>
         </div>
 
@@ -394,7 +429,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/Blog/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -542,7 +577,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/Blog/"
                         >
                             <span>
@@ -619,292 +654,401 @@
 
 		<div class="main-content-body transition-fade-up">
 			
+			<div class="home-sidebar-container">
+    <div class="sticky-container sticky">
+        
+        
+            
+                <div class="sidebar-links">
+                    <div class="site-info">
+                        <div class="site-name">SMY&#39;s blog</div>
+                        
+                            <div class="announcement">
+                                Reality.
+                            </div>
+                        
+                    </div>
+                    
+                        
+                            
+                                <a class="links" href="/Blog/archives">
+                                    
+                                        <i class="fa-regular fa-archive icon-space"></i>
+                                    
+                                    <span class="link-name">Archives</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/Blog/tags">
+                                    
+                                        <i class="fa-regular fa-tags icon-space"></i>
+                                    
+                                    <span class="link-name">Tags</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/Blog/categories">
+                                    
+                                        <i class="fa-regular fa-folder icon-space"></i>
+                                    
+                                    <span class="link-name">Categories</span>
+                                </a>
+                            
+                        
+                    
+                </div>
+            
+            <div class="sidebar-content"  marginTop >
+                <div class="avatar flex justify-center">
+    <img src="/Blog/images/avatar.jpg">
+</div>
+                <div class="author flex flex-col justify-center my-2.5 mx-0">
+    <div class="name">Random spike</div>
+    
+        <div class="label">vOwOv</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">24</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+            </div>
+        
+
+    </div>
+</div>
+
+			
 
 			<div class="main-content">
-				<div class="archive-container shadow-none hover:shadow-none sm:shadow-redefine sm:hover:shadow-redefine-hover">
-	
-<div class="archive-list-container">
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2025</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">5</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+				<div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='09-21'>
-                    
-                    <a href="/Blog/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%9C%E6%96%87%E6%8B%BF%E5%88%B05%E5%88%86/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">如何在作文拿到5分</span>
-                    </a>
-                    
+
                 
-                    
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E4%BD%A0%E4%BB%AC%E7%9A%84%E5%88%9B%E6%96%B0%E7%82%B9%E5%9C%A8%E5%93%AA%E9%87%8C_/">
+                            你们的创新点在哪里？
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            一位老师常说，
+
+你们的创新点在哪里？
+
+这是我引用这句话的0xff次了。我说有这么多就是有这么多。如果你不认为有这么多，那是因为很多文章我隐藏了。
+为了让这句话更有意境，我们不妨设这个老师的名字是Luxun。
+
+你们的创新点在哪里？
+——Luxun
+
+那我们自然是很有创新点的。
+以此文纪我们初中的丰功伟绩。正如某年某区语文一卷所引用人民日报的那篇文章一样。
+
+碑需自立，名由己传
+—— 人民...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Jul 23 2024 22:52:07 GMT+0800">
+                
+                    2024-07-23
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
                     
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='03-25'>
+                        <li>
+                            <a href="/Blog/categories/%E4%BC%91%E9%97%B2-%E5%A8%B1%E4%B9%90/">休闲&amp;娱乐</a>&nbsp;
+                        </li>
                     
-                    <a href="/Blog/%E5%AE%8C%E5%BD%A2%E5%A1%AB%E7%A9%BA%E4%B9%8B%E5%88%AB%E6%A0%B7%E7%9A%84%E7%A2%B0%E7%A2%B0%E8%BD%A6%E5%A4%A7%E6%88%98/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">完形填空之别样的碰碰车大战</span>
-                    </a>
                     
                 
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='02-14'>
-                    
-                    <a href="/Blog/IMMC%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">IMMC游记</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/IMMC%E5%86%AC%E5%AD%A3%E8%B5%9B%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">IMMC冬季赛游记</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/HiMCM%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">HiMCM游记</span>
-                    </a>
-                    
-                
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">19</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E6%A0%A1%E5%9B%AD/">校园</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E5%8E%9F%E5%88%9B/">原创</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/Blog/tags/%E8%AE%B0%E5%BD%95/">记录</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E4%BD%A0%E4%BB%AC%E7%9A%84%E5%88%9B%E6%96%B0%E7%82%B9%E5%9C%A8%E5%93%AA%E9%87%8C_/">阅读全文<span class="seo-reader-text">你们的创新点在哪里？</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='12-20'>
-                    
-                    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B020241220/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">文化课日记20241220</span>
-                    </a>
-                    
+
                 
-                    
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E4%BB%8Elxl%E5%BC%80%E5%A7%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                            从lxl开始的数据结构
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            树状数组
+123456789101112131415161718192021222324252627282930313233343536#include&lt;bits/stdc++.h&gt;#define int long long#define lowbit(x)(x&amp;-x)using namespace std;const int N=1e7;int n,m,a[N],c[N...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jul 15 2024 23:08:52 GMT+0800">
+                
+                    2024-07-15
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
                     
                         
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='11-14'>
+                        <li>
+                            <a href="/Blog/categories/OI/">OI</a>&nbsp;
+                        </li>
                     
-                    <a href="/Blog/%E4%B8%80%E5%88%86%E9%92%9F%E7%9B%AE%E7%9D%B9%E8%80%83%E5%9C%BA%E4%B9%8B%E6%80%AA%E7%8E%B0%E7%8A%B6/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">一分钟目睹考场之怪现状</span>
-                    </a>
                     
                 
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-26'>
-                    
-                    <a href="/Blog/2024_CSPS/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">2024 CSPS</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-18'>
-                    
-                    <a href="/Blog/%E4%BD%9C%E6%96%87%E8%B5%8F%E6%9E%90_%E5%88%AB%E6%A0%B7%E7%9A%84%E7%A2%B0%E7%A2%B0%E8%BD%A6%E5%A4%A7%E6%88%98/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">作文赏析——别样的碰碰车大战</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='10-13'>
-                    
-                    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B0_20241013/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">文化课日记 20241013</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='09-22'>
-                    
-                    <a href="/Blog/%E6%96%87%E5%8C%96%E8%AF%BE%E6%97%A5%E8%AE%B0_2024922/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">文化课日记 2024922</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-30'>
-                    
-                    <a href="/Blog/%E5%86%9B%E8%AE%AD%E6%B8%B8%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">军训游记</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-24'>
-                    
-                    <a href="/Blog/%E4%BB%96_%E4%B8%80%E5%90%8D%E5%A4%96%E6%98%9F%E4%BA%BA/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">他，一名外星人</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-22'>
-                    
-                    <a href="/Blog/%E5%B0%8F%E5%BF%83_%E4%BD%A0%E8%BA%AB%E8%BE%B9%E5%8F%AF%E8%83%BD%E6%9C%89%E5%A4%96%E6%98%9F%E4%BA%BA_/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">小心 你身边可能有外星人</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-19'>
-                    
-                    <a href="/Blog/SES_%E6%9F%90%E8%8B%B1%E8%AF%AD%E8%80%81%E5%B8%88%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">SES 某英语老师规则类怪谈</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">儒林外史</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-18'>
-                    
-                    <a href="/Blog/%E5%94%90%E9%9B%8E%E4%B8%8D%E8%BE%B1%E4%BD%BF%E5%91%BD%E7%A2%8E%E7%89%87%E5%8C%96%E7%BF%BB%E8%AF%91/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">唐雎不辱使命碎片化翻译</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">毕业典礼</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E5%AF%B9%E8%AF%9D/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">对话</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='08-16'>
-                    
-                    <a href="/Blog/%E5%A4%A9%E7%9A%87%E5%A4%96%E4%BC%A0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">天皇外传</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='07-23'>
-                    
-                    <a href="/Blog/%E4%BD%A0%E4%BB%AC%E7%9A%84%E5%88%9B%E6%96%B0%E7%82%B9%E5%9C%A8%E5%93%AA%E9%87%8C_/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">你们的创新点在哪里？</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='07-15'>
-                    
-                    <a href="/Blog/%E4%BB%8Elxl%E5%BC%80%E5%A7%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">从lxl开始的数据结构</span>
-                    </a>
-                    
-                
-                    
-                    
-                    <a href="/Blog/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%BE%E8%AE%BA/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">从0开始的图论</span>
-                    </a>
-                    
-                
-                    
-                    
-                        
-                            </li>
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='07-11'>
-                    
-                    <a href="/Blog/%E4%B8%BA%E4%BB%80%E4%B9%88nitianyi%E7%9A%84%E5%90%8D%E5%AD%97%E8%B5%B7%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">为什么nitianyi的名字起的非常好</span>
-                    </a>
-                    
-                
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
-    
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E4%BB%8Elxl%E5%BC%80%E5%A7%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">阅读全文<span class="seo-reader-text">从lxl开始的数据结构</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%BE%E8%AE%BA/">
+                            从0开始的图论
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            链式前向心
+12345678int head[N],cnt,n,m,s,dis[N];struct edge&#123;int to,value,next;&#125;e[N];void add(int u,int v,int w)&#123;	e[++cnt].to=v;	e[cnt].value=w;	e[cnt].next=head[u];	head[u]=cnt;&#125;
+
+最短...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jul 15 2024 22:50:17 GMT+0800">
+                
+                    2024-07-15
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%BE%E8%AE%BA/">阅读全文<span class="seo-reader-text">从0开始的图论</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E4%B8%BA%E4%BB%80%E4%B9%88nitianyi%E7%9A%84%E5%90%8D%E5%AD%97%E8%B5%B7%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD/">
+                            为什么nitianyi的名字起的非常好
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            为什么nitianyi的名字起的非常好###前情提要lxm老师在上公开课的时候，毫不犹豫的指出，新时代中国特色社会主义现代化建设者nitianyi的名字非常的好！而旧时代清朝特色封建统治闭关锁国战略策划者quansiyuan的名字非常的差！
+为什么呢？
+她认为，nitianyi的名字读音比较好，而quansiyuan的读音不好。（应该是在上一节关于古诗格律分析的一节课）
+###靠谱的朋友我从...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Jul 11 2024 21:50:39 GMT+0800">
+                
+                    2024-07-11
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E5%AD%A6%E4%B9%A0-%E6%96%87%E5%8C%96%E8%AF%BE/">学习&amp;文化课</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E9%97%B2%E8%AF%9D/">闲话</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E4%B8%BA%E4%BB%80%E4%B9%88nitianyi%E7%9A%84%E5%90%8D%E5%AD%97%E8%B5%B7%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD/">阅读全文<span class="seo-reader-text">为什么nitianyi的名字起的非常好</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator px-7 py-5">
+        <div class="paginator">
+	<a class="extend prev" rel="prev" href="/Blog/page/2/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/Blog/">1</a><a class="page-number" href="/Blog/page/2/">2</a><span class="page-number current">3</span>
+</div>
+  
+    </div>
+</div>
+
 			</div>
 
 			
@@ -1070,6 +1214,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 
